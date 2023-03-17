@@ -30,7 +30,7 @@ const Login = () => {
       .then((res) => {
         alert("Logged in successfully");
         console.log(res.data.idToken);
-        // localStorage.setItem('token',res.data.idToken);
+        
         const token = res.data.idToken;
         const LoginEmail = res.data.email;
 
